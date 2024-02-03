@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    
+    <script>
+        //area of circle with radius 6
+        const pi = Math.PI;
+        function circleArea(radius){
+            let area = pi * radius * radius;
+            return area;
+        }
+        console.log(circleArea(6));
+      
+
+        //arithmetic operations
+        function arithOps(num1, num2, operation) {
+            switch(operation) {
+                case 'add':
+                    return num1 + num2;
+                case 'subtract':
+                    return num1 - num2;
+                case 'multiplicate':
+                    return num1 * num2;
+                case 'divide':
+                    return num1 / num2;
+                default:
+                    return "wrong operation";
+            }
+        };
+
+        let a = 2;
+        let b = 3;
+
+        console.log("add : ", arithOps(a, b, 'add'));
+        console.log("subtract : ", arithOps(a, b, 'subtract'));
+        console.log("multiplicate : ", arithOps(a, b, 'multiplicate'));
+        console.log("divide:", arithOps(a, b, 'divide'));
+
+        //area of rectangle
+        const RectArea = (length, width) => {
+            return length * width;
+        };
+        console.log("area of rectangle : ", RectArea(20, 15));
+
+
+        //a)scope of const
+        /*
+          a): variables defined with const have block scope.
+        */
+        //b)when were let and const added to JavaScript?
+        /* 
+          b): 2015
+        */
+
+    </script>
+
+
+
+</head>
+
+<body>
+    <h1>Qianrong Yang</h1>
+</body>
+
+</html>
+
