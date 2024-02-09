@@ -1,0 +1,21 @@
+body {
+    color: rgb(42, 45, 107);
+    background-color: #8eb5d1;
+}
+
+form, input, button {
+    width: 80%;
+    color: rgb(34, 104, 66);
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #b326b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
