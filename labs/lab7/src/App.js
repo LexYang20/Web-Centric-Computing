@@ -8,8 +8,6 @@ import FormComponent from './FormComponent';
 import ProfileComponent from './ProfileComponent';
 import DashboardComponent from './DashboardComponent';
 
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
 
 function App() {
   return (
