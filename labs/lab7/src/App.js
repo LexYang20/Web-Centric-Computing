@@ -2,24 +2,22 @@ import logo from './logo.png';
 import './App.css';
 
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Redirect } from 'react-router-dom';
 
 import FormComponent from './FormComponent';
 import ProfileComponent from './ProfileComponent';
 import DashboardComponent from './DashboardComponent';
 
-              
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={FormComponent} />
-        <Route path="/profile" component={ProfileComponent} />
-        <Route path="/dashboard" component={DashboardComponent} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<FormComponent />} exact />
+        <Route path="/profile" element={<ProfileComponent />} />
+        <Route path="/dashboard" element={<DashboardComponent />} />
+      </Routes>
     </Router>
   );
 }
-
 
 export default App;
