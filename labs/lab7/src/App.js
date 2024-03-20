@@ -1,8 +1,8 @@
-import logo from './logo.png';
+//import logo from './logo.png';
 import './App.css';
 
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, Redirect } from 'react-router-dom';
+//import React, { useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import FormComponent from './FormComponent';
 import ProfileComponent from './ProfileComponent';
