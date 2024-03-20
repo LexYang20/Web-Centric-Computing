@@ -2,7 +2,8 @@
 import './App.css';
 
 //import React, { useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 import FormComponent from './FormComponent';
 import ProfileComponent from './ProfileComponent';
