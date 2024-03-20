@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
@@ -40,7 +41,7 @@ const FormComponent = () => {
     };
   
     if (redirect) {
-      return <Redirect to={{ pathname: "/profile", state: formData }} />;
+      return <Navigate to={{ pathname: "/profile", state: formData }} replace/>;
     }
   
     return (
