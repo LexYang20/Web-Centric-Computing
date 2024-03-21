@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './FormComponent.css';
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
@@ -15,15 +16,15 @@ const FormComponent = ({ onSubmit }) => {
 
     const validateForm = () => {
       if (!formData.firstName || !formData.lastName) {
-        setError('Please fill in your full name.');
+        setError('Input full name.');
         return false;
       }
       if (!emailPattern.test(formData.email)) {
-        setError('Invalid email address.');
+        setError('Invalid email');
         return false;
       }
       if (!passwordPattern.test(formData.password)) {
-        setError('Password must contain at least 8 characters, including 1 uppercase letter, 1 number, and 1 special character.');
+        setError('Invalid password, must include at least 8 characters, including 1 uppercase letter, 1 number, and 1 special character.');
         return false;
       }
       return true;
@@ -41,7 +42,7 @@ const FormComponent = ({ onSubmit }) => {
     };
 
     return (
-      <div>
+      <div className="form-container"> 
         <form onSubmit={handleSubmit}>
           <div>
             <label>First Name: </label>
@@ -71,7 +72,7 @@ const FormComponent = ({ onSubmit }) => {
           </div>
           <button type="submit">Submit</button>
         </form>
-        {error && <div>{error}</div>}
+        {error && <div className="error-message">{error}</div>} 
       </div>
     );
 };

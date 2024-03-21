@@ -1,9 +1,11 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+import './ProfileComponent.css';
 
 const ProfileComponent = ({ data }) => {
     const { firstName, lastName, email, favSeason } = data;
     return (
-      <div>
+      <div className="profile-container">
         <h2>Profile</h2>
         <p>First Name: {firstName}</p>
         <p>Last Name: {lastName}</p>
