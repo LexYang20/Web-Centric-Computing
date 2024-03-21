@@ -73,6 +73,7 @@ const FormComponent = () => {
             <select value={formData.favSeason} onChange={(e) => setFormData({ ...formData, favSeason: e.target.value })}>
               <option value="">Select a Season</option>
               <option value="Spring">Spring</option>
+              <option value="Summer">Fall</option>
               <option value="Fall">Fall</option>
               <option value="Winter">Winter</option>
             </select>
