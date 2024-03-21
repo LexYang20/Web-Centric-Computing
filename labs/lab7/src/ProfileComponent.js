@@ -1,8 +1,7 @@
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const ProfileComponent = ({ location }) => {
-    const { firstName, lastName, email, favSeason } = location.state;
-  
+const ProfileComponent = ({ data }) => {
+    const { firstName, lastName, email, favSeason } = data;
     return (
       <div>
         <h2>Profile</h2>
@@ -10,9 +9,9 @@ const ProfileComponent = ({ location }) => {
         <p>Last Name: {lastName}</p>
         <p>Email: {email}</p>
         <p>Favorite Season: {favSeason}</p>
-        <Link to="/dashboard">Go to Dashboard</Link>
+        <Link to="/dashboard">Back to dashboard</Link>
       </div>
     );
-  };
+};
 
 export default ProfileComponent;
