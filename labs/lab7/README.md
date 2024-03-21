@@ -1,8 +1,8 @@
-# Lab 6
+# Lab 7
 
-* *Date Created*: 05 03 2024
-* *Lab URL*: <https://lex-lab6.netlify.app/>
-* *Git URL*: <https://git.cs.dal.ca/qianrong/csci3172/-/tree/main/labs/lab6>
+* *Date Created*: 15 03 2024
+* *Lab URL*: <https://lex-lab7.netlify.app/>
+* *Git URL*: <https://git.cs.dal.ca/qianrong/csci3172/-/tree/main/labs/lab7>
 
 
 
