@@ -23,7 +23,6 @@ const App = () => {
       <Routes>
         <Route path="/" element={userProfile ? <Navigate replace to="/profile" /> : <FormComponent onSubmit={handleSubmit} />} />
         <Route path="/profile" element={userProfile ? <ProfileComponent data={userProfile} /> : <Navigate replace to="/" />} />
-        // Corrected prop to match the state variable intended for errors
         <Route path="/dashboard" element={<DashboardComponent dashboard={errorDashboard} />} />
       </Routes>
     </Router>
